@@ -3,53 +3,46 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <Container maxW="8xl">
-        <Flex minWidth='max-content' alignItems='center'  bg='#e57cd8'>
-        {/* <Box p='2'>
-            <Heading size='md'>Chakra App</Heading>
-        </Box> */}
-        <Spacer />
-        <HStack h={8}>
-            <Link fontSize={13}>Back to Toggl Global</Link><Spacer/>
-            <Link fontSize={13}>Products</Link><Spacer/>
-            <Link fontSize={13}>Blog</Link><Spacer/>
-            <Link fontSize={13}>Our Mission</Link><Spacer/>
-            <Link fontSize={13}>Working at Toggl</Link><Spacer/>
+    <Container maxW='8xl'>
+        <Flex minWidth='max-content' alignItems='center'  bg='#e57cd8' p={0} m={0}>
+        
+            <Spacer />
+            <HStack h={8}>
+                <Link fontSize={{base:8,lg:13}}>Back to Toggl Global</Link><Spacer/>
+                <Link fontSize={{base:8,lg:13}}>Products</Link><Spacer/>
+                <Link fontSize={{base:8,lg:13}}>Blog</Link><Spacer/>
+                <Link fontSize={{base:8,lg:13}}>Our Mission</Link><Spacer/>
+                <Link fontSize={{base:8,lg:13}}>Working at Toggl</Link><Spacer/>
 
-        </HStack>
+            </HStack>
         
         </Flex>
-    {/* <Grid templateColumns='repeat(3, 1fr)' gap={6}>
-        <Box w='70px' h='10' bg='blue.500' />
-        <Box w='170px' h='10' bg='blue.500' />
-        <Box w='180px' h='10' bg='blue.500' />
-    </Grid> */}
+    
 
 
+        <Flex py="1rem" bg="#2C1338" color="white" my={0}>
+            <Heading color="#e57cd8">toggl</Heading>
+            <HStack>
+                <Spacer/>
+                <Spacer/>
+                <Spacer/>
+                <Link fontSize={{base:12,lg:16}}>Product</Link><Spacer/>
+                <Link fontSize={{base:12,lg:16}}>Pricing</Link><Spacer/>
+                <Link fontSize={{base:12,lg:16}}>Why Track?</Link><Spacer/>
+                <Link fontSize={{base:12,lg:16}}>Careers</Link><Spacer/>
+            </HStack>
+            
+            <Spacer />
+            <HStack>
+                <Link fontSize={{base:12,lg:16}}>Book a demo </Link>
+                <Box>|</Box>
+                <Link to="/login" fontSize={{base:12,lg:16}}>Log In</Link>
 
-    <Flex py="1rem" bg="#2C1338" color="white" my={0}>
-      <Heading color="#e57cd8">toggl</Heading>
-      <HStack>
-      <Spacer/>
-      <Spacer/>
-      <Spacer/>
-      <Link>Product</Link><Spacer/>
-      <Link>Pricing</Link><Spacer/>
-      <Link>Why Track?</Link><Spacer/>
-      <Link>Careers</Link><Spacer/>
-      </HStack>
-      
-      <Spacer />
-      <HStack>
-        <Link >Book a demo  |</Link>
-        <Link to="/login">Log In</Link>
+            </HStack>
 
-      </HStack>
-
-        
-      {/* <Button mx={2}>LOGIN</Button> */}
-      <Button mx={2} color="#e57cd8" bg="#FFF3ED">Try for free</Button>
-    </Flex>
+            
+            <Button mx={2} color="#e57cd8" bg="#FFF3ED" p={{base:2,lg:0}} fontSize={{base:8,md:12}} size={{base:"xm",lg:"lg"}}>Try for free</Button>
+        </Flex>
 
 
     
