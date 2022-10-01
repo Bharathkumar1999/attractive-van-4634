@@ -3,8 +3,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <Container maxW='8xl'>
-        <Flex minWidth='max-content' alignItems='center'  bg='#e57cd8' p={0} m={0}>
+    <Container maxW='8xl' m={0} p={0} >
+        <Flex minWidth='max-content' alignItems='center'  bg='#e57cd8' p={0} m={0} >
         
             <Spacer />
             <HStack h={8}>
