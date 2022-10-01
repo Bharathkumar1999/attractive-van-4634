@@ -41,7 +41,7 @@ const Navbar = () => {
             </HStack>
 
             
-            <Button mx={2} color="#e57cd8" bg="#FFF3ED" p={{base:2,lg:0}} fontSize={{base:8,md:12}} size={{base:"xm",lg:"lg"}}>Try for free</Button>
+            <Button mx={2} color="#e57cd8" bg="#FFF3ED" p={{base:2,lg:4}} fontSize={{base:10,md:12}} size={{base:"xm",lg:"lg"}}>Try for free</Button>
         </Flex>
 
 
