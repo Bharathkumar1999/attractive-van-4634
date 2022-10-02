@@ -1,37 +1,40 @@
-import { Button, Container, Flex, FormControl, FormLabel, Grid, Select, Textarea, GridItem, Heading, Input, Text, VStack, Box, Image, Center, Divider, SimpleGrid, Spacer, ButtonGroup, Badge } from '@chakra-ui/react'
+import { Button, Container, Flex,  VStack,  Badge } from '@chakra-ui/react'
 import React from 'react'
 import {
     Table,
     Thead,
     Tbody,
-    Tfoot,
+  
     Tr,
     Th,
     Td,
-    TableCaption,
+   
     TableContainer,
   } from '@chakra-ui/react'
+import { useContext } from 'react'
+import { AppContext } from '../Context/AppContext'
 
 const Product = () => {
+    const{logoutUser}= useContext(AppContext)
   return (
     <Container maxW={{base:"full", lg:"container.xl"}} p={{base:2,lg:0}}  >
-        <Flex h="250vh"  direction={{base:"column-reverse",lg:"row"}}>
-        <VStack w="10%" h="full" p={4} spacing={4} alignItems='flex-start' bg="#2C1338">
+        <Flex h="250%"  direction={{base:"column-reverse",lg:"row"}}>
+        <VStack w={{base:"5%",lg:"10%"}} h={{base:"0%",lg:"full"}} p={4} spacing={4} alignItems='flex-start' bg={{base:"none", lg:"#2C1338"}}>
         
        
-         <VStack  spacing={3} alignItems='flex-start'>
+         <VStack  spacing={3} alignItems='flex-start'  >
             
-            <Badge color='rgb(130, 113, 136)' bg='#2C1338'>TRACK</Badge>
-            <Button bg="#2C1338" color='grey' size='sm'>Timer</Button>
-            <Badge color='rgb(130, 113, 136)' bg='#2C1338'>ANALYZE</Badge>
-            <Button bg="#2C1338" color='grey' size='sm'>Reports</Button>
-            <Button bg="#2C1338" color='grey' size='sm'>Insights</Button>
-            <Badge color='rgb(130, 113, 136)' bg='#2C1338'>MANAGE</Badge>
-            <Button bg="#2C1338" color='grey' size='sm'>Project</Button>
-            <Button bg="#2C1338" color='grey' size='sm'>Clients</Button>
-            <Button bg="#2C1338" color='grey' size='sm'>Team</Button>
-            <Badge color='rgb(130, 113, 136)' bg='#2C1338'>WORKSPACE</Badge>
-            <Button bg="#2C1338" color='grey' size='sm'>Logout</Button>
+            <Badge color='rgb(130, 113, 136)' bg='#2C1338' fontSize={{base:"0", lg:"sm"}}>TRACK</Badge>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}}>Timer</Button>
+            <Badge color='rgb(130, 113, 136)' bg='#2C1338' fontSize={{base:"0", lg:"sm"}}>ANALYZE</Badge>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:'sm'}}>Reports</Button>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}}>Insights</Button>
+            <Badge color='rgb(130, 113, 136)' bg='#2C1338' fontSize={{base:"0", lg:"sm"}}>MANAGE</Badge>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}}>Project</Button>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}}>Clients</Button>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}}>Team</Button>
+            <Badge color='rgb(130, 113, 136)' bg='#2C1338' fontSize={{base:"0", lg:"sm"}}>WORKSPACE</Badge>
+            <Button bg={{base:"0", lg:"#2C1338"}} color='grey' size='sm' fontSize={{base:"0", lg:"sm"}} onClick={()=>logoutUser()}>Logout</Button>
             
         </VStack>
         

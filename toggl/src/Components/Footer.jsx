@@ -9,7 +9,7 @@ const Footer = () => {
         <VStack w="full" h="full" p={10} spacing={10} alignItems='flex-start' >
             
             <VStack  spacing={3} alignItems='flex-start' color="white">
-                <Heading fontSize="28px"  lineHeight={1.25} textAlign="center" display="block" h={20} color="#e57cd8">toggl</Heading>
+                <Heading fontSize="28px"  lineHeight={1.25} textAlign="center" display="block" h={20} color="#e57cd8"></Heading>
                 <Text fontSize={17} color="#FCE5D8" mt={4} ml={15} pl={4}>TOGGL GLOBAL</Text>
             </VStack>
         

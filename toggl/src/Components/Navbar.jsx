@@ -1,5 +1,7 @@
-import { Box, Button, Container, Flex, Grid, Heading, HStack, Link, Spacer, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex,  Heading, HStack,  Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import { Link   } from 'react-router-dom';
+
 
 const Navbar = () => {
   return (
@@ -8,11 +10,11 @@ const Navbar = () => {
         
             <Spacer />
             <HStack h={8}>
-                <Link fontSize={{base:8,lg:13}}>Back to Toggl Global</Link><Spacer/>
-                <Link fontSize={{base:8,lg:13}}>Products</Link><Spacer/>
-                <Link fontSize={{base:8,lg:13}}>Blog</Link><Spacer/>
-                <Link fontSize={{base:8,lg:13}}>Our Mission</Link><Spacer/>
-                <Link fontSize={{base:8,lg:13}}>Working at Toggl</Link><Spacer/>
+                <Text fontSize={{base:8,lg:13}}>Back to Toggl Global</Text><Spacer/>
+                <Text  href="/products" fontSize={{base:8,lg:13}}>Products</Text><Spacer/>
+                <Text fontSize={{base:8,lg:13}}>Blog</Text><Spacer/>
+                <Text fontSize={{base:8,lg:13}}>Our Mission</Text><Spacer/>
+                <Text fontSize={{base:8,lg:13}}>Working at Toggl</Text><Spacer/>
 
             </HStack>
         
@@ -21,27 +23,31 @@ const Navbar = () => {
 
 
         <Flex py="1rem" bg="#2C1338" color="white" my={0}>
-            <Heading color="#e57cd8">toggl</Heading>
+            <Link to='/' ><Heading color="#e57cd8">toggl</Heading></Link>
             <HStack>
                 <Spacer/>
                 <Spacer/>
                 <Spacer/>
-                <Link fontSize={{base:12,lg:16}}>Product</Link><Spacer/>
-                <Link fontSize={{base:12,lg:16}}>Pricing</Link><Spacer/>
-                <Link fontSize={{base:12,lg:16}}>Why Track?</Link><Spacer/>
-                <Link fontSize={{base:12,lg:16}}>Careers</Link><Spacer/>
+                <Link to='/products' fontSize={{base:12,lg:16}}>Product</Link><Spacer/>
+                <Text fontSize={{base:12,lg:16}}>Pricing</Text><Spacer/>
+                <Text fontSize={{base:12,lg:16}}>Why Track?</Text><Spacer/>
+                <Text fontSize={{base:12,lg:16}}>Careers</Text><Spacer/>
             </HStack>
             
             <Spacer />
             <HStack>
-                <Link fontSize={{base:12,lg:16}}>Book a demo </Link>
+
+            {/* <Link to="/">HOME</Link>
+            <Link to="/products">PRODUCTS</Link> */}
+                
+                <Link to='/demo' fontSize={{base:12,lg:16}}>Book a demo </Link>
                 <Box>|</Box>
                 <Link to="/login" fontSize={{base:12,lg:16}}>Log In</Link>
 
             </HStack>
 
             
-            <Button mx={2} color="#e57cd8" bg="#FFF3ED" p={{base:2,lg:4}} fontSize={{base:10,md:12}} size={{base:"xm",lg:"lg"}}>Try for free</Button>
+            <Button mx={2} color="#e57cd8" bg="#FFF3ED" p={{base:2,lg:4}} fontSize={{base:10,md:12}} size={{base:"xm",lg:"lg"}}><Link to='/signup'>Try for free</Link></Button>
         </Flex>
 
 

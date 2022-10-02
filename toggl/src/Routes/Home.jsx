@@ -1,6 +1,6 @@
-import { Box, Button, Center, Container,  Divider,  Flex, FormControl, FormLabel, Grid, GridItem, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, PinInput, PinInputField, Select, SimpleGrid, Spacer, Stack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Center, Container,  Divider,  Flex, FormControl, FormLabel, Grid, GridItem, Heading,  Image, Input, Link, List, ListIcon, ListItem,  SimpleGrid, Spacer, Stack, Text, VStack } from '@chakra-ui/react'
 import React  from 'react'
-import { Icon } from '@chakra-ui/react'
+//import { Icon } from '@chakra-ui/react'
 //import { MdCheckCircle } from 'react-icons/md'
 import { CheckIcon, StarIcon } from '@chakra-ui/icons'
 
