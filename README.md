@@ -2,7 +2,7 @@
 
 Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. Toggl Track tracks time blocks, optionally labeled with a task, a project, and tags. A Stress-free time tracking software, project-planning, and hiring. Designed by and for teams that work from anywhere.
 
----
+--
 
 ### Tech Stack Used :
 
