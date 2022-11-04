@@ -19,6 +19,8 @@ Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in 
 ### Deployment on vercel : https://toggl-bay.vercel.app/
 
 
+### Demo video : https://drive.google.com/file/d/1eFEtkaTFRMeteqSa_1EebrDQ-GRKlqpw/view
+
 
 ### Features :
 
