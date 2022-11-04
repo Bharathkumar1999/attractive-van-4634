@@ -22,10 +22,10 @@ Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in 
 
 ### Features :
 
-Login and Signin facility.
-Personal user Dashboard when logged in.
-Responsive website.
-Logout functionality.
+- Login and Signin facility.
+- Personal user Dashboard when logged in.
+- Responsive website.
+- Logout functionality.
 
 ---
 
