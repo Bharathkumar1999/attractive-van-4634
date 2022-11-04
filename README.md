@@ -14,12 +14,7 @@ Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in 
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-
-
-### Deployment on vercel : https://toggl-bay.vercel.app/
-
-
-### Demo video : https://drive.google.com/file/d/1eFEtkaTFRMeteqSa_1EebrDQ-GRKlqpw/view
+### Project Code : attractive-van-4634
 
 
 ### Features :
@@ -30,6 +25,11 @@ Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in 
 - Logout functionality.
 
 
-### Project Code : attractive-van-4634
+### Deployment on vercel : https://toggl-bay.vercel.app/
+
+
+### Demo video : https://drive.google.com/file/d/1eFEtkaTFRMeteqSa_1EebrDQ-GRKlqpw/view
+
+
 
 
